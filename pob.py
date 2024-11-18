@@ -8,7 +8,7 @@ st.set_page_config(page_title="Poblacion 2020", layout="wide", page_icon=":lugga
 st.title("Peru: Poblacion al :red[2020]")
 st.markdown("---")
 #to create Tabs:    
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs(["Map", "Poblacion", "PBI"])
+tab1, tab2, tab3 = st.tabs(["Map", "Poblacion", "PBI"])
 
 st.subheader("Hola! :wave:, :coffee: ")
 st.text("Segun el INEI, La poblacion del Peru al 2020 fue de 32,625,948 habitantes.")
@@ -97,7 +97,7 @@ with div4:
     barchart4
     
 #to create Tabs:    
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs(["Map", "Poblacion", "PBI"])
+tab1, tab2, tab3 = st.tabs(["Map", "Poblacion", "PBI"])
 with tab1: #Map
     map=px.scatter_mapbox(df_selection1, lat=df_selection1['Lat'], lon=df_selection1['Lon'], zoom=8, color=df_selection1['DISTRITO'], 
                  size=df_selection1['Total'], width=1200, height=800, title="Mapa Distrital")
