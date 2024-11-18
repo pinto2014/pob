@@ -8,7 +8,7 @@ st.set_page_config(page_title="Poblacion 2020", layout="wide", page_icon=":lugga
 st.title("Peru: Poblacion al :red[2020]")
 st.markdown("---")
 #to create Tabs:    
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs(["Map", "Poblacion", "PBI", "Empleo", "Agricultura", "Mineria", "Pesca", "Turismo", "Social"  ])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs(["Map", "Poblacion", "PBI"])
 
 st.subheader("Hola! :wave:, :coffee: ")
 st.text("Segun el INEI, La poblacion del Peru al 2020 fue de 32,625,948 habitantes.")
