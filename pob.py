@@ -23,7 +23,7 @@ perupob_df=perupob.sort_values(by=('Total'), ascending=False)
 
 
 #to make a sidebar for interactivity:
-st.sidebar.header("Para filtrar la data seleccione:" )
+st.sidebar.header("Para filtrar la Poblacion for departamento seleccione:" )
 departamento=st.sidebar.multiselect("Departamento:", options=perupob_df["DEPARTAMENTO"].unique())
 
 
