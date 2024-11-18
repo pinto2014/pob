@@ -73,7 +73,8 @@ barchart2.update_traces(textfont_size=12, textangle=0, textposition="outside", c
 #st.plotly_chart(barchart2)
 
 # to show two charts in same row:
-div1, div2=st.columns(spec=[0.5, 0.2])
+div1, div2=st.columns((7,3))
+#div1, div2=st.columns(spec=[0.5, 0.2])
 with div1:
     st.dataframe(df_selection1.loc[:,["DEPARTAMENTO", "PROVINCIA", "DISTRITO", "Total"]])
 with div2:
